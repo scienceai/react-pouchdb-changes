@@ -1,5 +1,7 @@
 # `<PouchDBChanges />`
 
+[![Build Status](https://travis-ci.org/scienceai/react-pouchdb-changes.svg?branch=master)](https://travis-ci.org/scienceai/react-pouchdb-changes)
+
 ### Install
 ```
 npm install react-pouchdb-changes
@@ -18,7 +20,7 @@ import PouchDBChanges from 'react-pouchdb-changes';
 * `onComplete: Function`: Optional. Called when the `complete` event is fired from the changes feed.
 * `onError: Function`: Optional. Called when the `error` event is fired from the changes feed.
 * `onPaused: Function`: Optional. Called when the `paused` event is fired from the changes feed.
-* `children: Any`. The children that will be rendered by this component. The `PouchDBChanges` component does not take responsibility for rendering any UI, so it can be plugged in at the root of your application or anywhere it makes sense to have access to the changes feed.
+* `children: Any`: Optional. The children that will be rendered by this component. The `PouchDBChanges` component does not take responsibility for rendering any UI, so it can be plugged in at the root of your application or anywhere it makes sense to have access to the changes feed.
 
 ### Example
 ```js
