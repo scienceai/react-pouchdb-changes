@@ -1,11 +1,11 @@
 {
   "name": "react-pouchdb-changes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component middleware for listening to the changes feed from CouchDB or PouchDB",
   "main": "index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src/pouchdb-changes.js -o dist/pouchdb-changes.js",
-    "prepublish": "rm dist/* && npm run build",
+    "prepublish": "rm -rf dist && mkdir dist && npm run build",
     "test": "./node_modules/.bin/mocha --compilers js:babel/register"
   },
   "repository": {
